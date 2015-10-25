@@ -1,0 +1,24 @@
+All files were downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, unzipped, and placed in the same directory.
+
+The working directory for the scrip run_analysis.R is set to the working directory containing the data files.
+
+The variable mergedSet includes the merged training and test sets.
+
+The files "features.txt", "subject_test.txt", "subject_train.txt", "X_test.txt", "X_train.txt", "y_test.txt", "y-train.txt" were read into memory.
+
+The subject IDs were added to the data by combining the columns.
+
+The activity codes were added to the data by combining the columns.
+
+The activity code column was renamed in order to avoid column name duplication in the combined set.
+The subject ID column was renamed subject_ID.
+
+The training and test sets were combined by combining the rows by matched columns.
+
+Descriptive activity names were added to the data set based on the activity codes (mergedSet).
+
+Then a subset was selected that contained subject IDs,activity names, and measurements pertaining to mean and standard deviation (selectedSet).
+ 
+TidySet: Created an independent data set from the data set in the previous step, with the average of each variable for each activity and each subject.
+
+
